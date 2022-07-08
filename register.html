@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ACADEMY IQ</title>
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- header -->
+	<header class="header" id="header">
+		<div class="header__wrapper">
+			<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+				<span class="hamburger__inner"></span>
+				<span class="hamburger__inner"></span>
+				<span class="hamburger__inner"></span>
+			</button>
+			<a href="index.html" class="logotype header__logotype">
+				<img src="img/logotype-white.png" alt="ACADEMY IQ">
+			</a>
+			<a href="#" class="header__ava">
+				<img src="img/user-ava.png" alt="Image">
+			</a>
+		</div>
+	</header>
+	<!-- end of header -->
+	<!-- lk -->
+	<div class="lk" id="lk">
+		<div class="lk__container lk__container--wide">
+			<div class="lk__wrapper">
+				<div class="lk__top">
+					<h2 class="lk__heading">
+						<span>Регистрация</span>
+						<span class="lk__heading--decor"></span>
+					</h2>
+					<a href="index.html" class="lk__back back-btn">
+						<svg class="back-btn__icon">
+							<use xlink:href="img/sprite.svg#icon-arrow-back"></use>
+						</svg>
+					</a>
+					</a>
+				</div>
+				<form action="#" class="lk-form">
+					<div class="lk-form__inner">
+						<div class="input-control lk-form__input">
+							<label for="lk-name" class="input-control__help">Имя</label>
+							<div class="input-control__inner">
+								<input type="text" id="lk-name" class="input-control__input" placeholder="Имя">
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<label for="lk-surname" class="input-control__help">Фамилия</label>
+							<div class="input-control__inner">
+								<input type="text" id="lk-surname" class="input-control__input" placeholder="Фамилия">
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<label for="lk-patronymic" class="input-control__help">Отчество</label>
+							<div class="input-control__inner">
+								<input type="text" id="lk-patronymic" class="input-control__input" placeholder="Отчество">
+							</div>
+						</div>
+					</div>
+					<div class="lk-form__inner">
+						<div class="input-control lk-form__input">
+							<label for="lk-date" class="input-control__help">Дата рождения</label>
+							<div class="input-control__inner">
+								<input type="date" id="lk-date" class="input-control__input" placeholder="Дата рождения">
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<span class="input-control__help">Категория</span>
+							<div class="input-control__inner">
+								<select class="select">
+									<option value="0">Выберите категорию</option>
+									<option value="1">Категория A</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="lk-form__inner">
+						<div class="input-control lk-form__input">
+							<label for="lk-email" class="input-control__help">Электронная почта</label>
+							<div class="input-control__inner">
+								<input type="email" id="lk-email" class="input-control__input" placeholder="Электронная почта">
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<label for="lk-tel" class="input-control__help">Телефон</label>
+							<div class="input-control__inner">
+								<input type="tel" id="lk-tel" class="input-control__input" placeholder="Телефон" data-inputmask="'mask': '+7(999) 999-99-99'">
+							</div>
+						</div>
+					</div>
+					<div class="lk-form__inner">
+						<div class="input-control lk-form__input">
+							<span class="input-control__help">Город</span>
+							<div class="input-control__inner">
+								<select class="select">
+									<option value="0">Выберите город</option>
+									<option value="1">Кумторкалинский район</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<label for="lk-school" class="input-control__help">Название школы</label>
+							<div class="input-control__inner">
+								<input type="text" id="lk-school" class="input-control__input" placeholder="Название школы">
+							</div>
+						</div>
+					</div>
+					<div class="lk-form__inner">
+						<div class="input-control lk-form__input">
+							<label for="lk-login" class="input-control__help">Логин</label>
+							<div class="input-control__inner">
+								<input type="text" id="lk-login" class="input-control__input" placeholder="Логин">
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<label for="lk-name-teacher" class="input-control__help">Фио Учителя</label>
+							<div class="input-control__inner">
+								<input type="text" id="lk-name-teacher" class="input-control__input" placeholder="Фио Учителя">
+							</div>
+						</div>
+					</div>
+					<div class="lk-form__inner">
+						<div class="input-control lk-form__input">
+							<label for="lk-password" class="input-control__help">Пароль</label>
+							<div class="input-control__inner">
+								<input type="password" id="lk-password" class="input-control__input" placeholder="Пароль">
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<label for="lk-password-double" class="input-control__help">Пароль еще раз</label>
+							<div class="input-control__inner">
+								<input type="password" id="lk-password-double" class="input-control__input" placeholder="Пароль еще раз">
+							</div>
+						</div>
+					</div>
+					<div class="lk-form__inner">
+						<button class="lk-form__btn btn" disabled>Регистрация</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
