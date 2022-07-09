@@ -30,7 +30,7 @@
 	</header>
 	<!-- end of header -->
 	<!-- lk -->
-	<div class="lk" id="lk">
+	<div class="lk lk--welcome" id="lk">
 		<div class="lk__container lk__container--wide">
 			<div class="lk__wrapper">
 				<div class="lk__top">
@@ -70,7 +70,10 @@
 						<div class="input-control lk-form__input">
 							<label for="lk-date" class="input-control__help">Дата рождения</label>
 							<div class="input-control__inner">
-								<input type="date" id="lk-date" class="input-control__input" placeholder="Дата рождения">
+								<input type="text" id="lk-date" class="input-control__input" placeholder="Дата рождения" data-inputmask="'mask': '99/99/9999'">
+								<svg class="input-control__icon">
+									<use xlink:href="img/sprite.svg#icon-calendar"></use>
+								</svg>
 							</div>
 						</div>
 						<div class="input-control lk-form__input">

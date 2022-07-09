@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ACADEMY IQ</title>
+	<title>ACADEMY IQ - Новая олимпиада</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -213,27 +213,113 @@
 	</div>
 	<!-- end of settings -->
 	<!-- lk -->
-	<div class="lk lk--decor" id="lk">
+	<div class="lk" id="lk">
 		<div class="lk__container">
 			<div class="lk__wrapper">
-				<h2 class="lk__title">Оплата за участие в олимпиаде</h2>
+				<div class="lk__title">Новая олимпиада</div>
 				<form action="#" class="lk-form">
 					<div class="lk-form__inner">
 						<div class="input-control lk-form__input">
-							<label for="lk-login" class="input-control__help">Логин</label>
+							<label for="lk-date-start" class="input-control__help">Дата начала</label>
 							<div class="input-control__inner">
-								<input type="text" id="lk-login" class="input-control__input" placeholder="Логин">
+								<input type="text" id="lk-date-start" class="input-control__input" placeholder="—" data-inputmask="'mask': '99/99/9999'">
+								<svg class="input-control__icon">
+									<use xlink:href="img/sprite.svg#icon-calendar"></use>
+								</svg>
 							</div>
 						</div>
 						<div class="input-control lk-form__input">
-							<label for="lk-password" class="input-control__help">Пароль</label>
+							<label for="lk-date-end" class="input-control__help">Дата конца</label>
 							<div class="input-control__inner">
-								<input type="password" id="lk-password" class="input-control__input" placeholder="Пароль">
+								<input type="text" id="lk-date-end" class="input-control__input" placeholder="—" data-inputmask="'mask': '99/99/9999'">
+								<svg class="input-control__icon">
+									<use xlink:href="img/sprite.svg#icon-calendar"></use>
+								</svg>
 							</div>
 						</div>
 					</div>
 					<div class="lk-form__inner">
-						<button class="lk-form__btn btn">Оплатить участие</button>
+						<div class="input-control lk-form__input">
+							<label for="lk-price-min" class="input-control__help">Стоимость мин.</label>
+							<div class="input-control__inner">
+								<input type="text" id="lk-price-min" class="input-control__input" placeholder="—">
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<label for="lk-price-fifty" class="input-control__help">Стоимость сред.</label>
+							<div class="input-control__inner">
+								<input type="text" id="lk-price-fifty" class="input-control__input" placeholder="—">
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<label for="lk-price-max" class="input-control__help">Стоимость макс.</label>
+							<div class="input-control__inner">
+								<input type="text" id="lk-price-max" class="input-control__input" placeholder="—">
+							</div>
+						</div>
+					</div>
+					<div class="lk-form__inner lk-form__inner--wrap">
+						<div class="input-control lk-form__input">
+							<span class="input-control__help">Тренажер 1</span>
+							<div class="input-control__inner">
+								<select class="select">
+									<option value="0">—</option>
+									<option value="1">Пункт 1</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<span class="input-control__help">Тренажер 2</span>
+							<div class="input-control__inner">
+								<select class="select">
+									<option value="0">—</option>
+									<option value="1">Пункт 1</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<button class="lk-form__add-btn">+ Добавить тренажер</button>
+					<div class="lk-form__inner lk-form__inner--wrap">
+						<div class="input-control lk-form__input">
+							<span class="input-control__help">Этап 1</span>
+							<div class="input-control__inner">
+								<select class="select">
+									<option value="0">—</option>
+									<option value="1">Пункт 1</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<span class="input-control__help">Этап 2</span>
+							<div class="input-control__inner">
+								<select class="select">
+									<option value="0">—</option>
+									<option value="1">Пункт 1</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<span class="input-control__help">Этап 3</span>
+							<div class="input-control__inner">
+								<select class="select">
+									<option value="0">—</option>
+									<option value="1">Пункт 1</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<span class="input-control__help">Этап 4</span>
+							<div class="input-control__inner">
+								<select class="select">
+									<option value="0">—</option>
+									<option value="1">Пункт 1</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<button class="lk-form__add-btn">+ Добавить тренажер</button>
+					<div class="lk-form__inner">
+						<button class="lk-form__btn btn">Создать</button>
 					</div>
 				</form>
 			</div>

@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ACADEMY IQ - Олимпиады</title>
+	<title>ACADEMY IQ - Создание диплома</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -216,16 +216,54 @@
 	<div class="lk" id="lk">
 		<div class="lk__container">
 			<div class="lk__wrapper">
-				<div class="lk__top">
-					<h2 class="lk__heading">
-						<span>Олимпиады</span>
-						<span class="lk__heading--decor"></span>
-					</h2>
-					<div class="lk__group">
-						<a href="#" class="lk__btn btn--sm btn">Создать олимпиаду</a>
-						<a href="#" class="lk__btn btn btn--sm btn--blue">Прошедшие</a>
+				<div class="lk__title">Создание диплома</div>
+				<form action="#" class="lk-form">
+					<div class="lk-form__inner">
+						<div class="input-control lk-form__input">
+							<label for="lk-name" class="input-control__help">Имя</label>
+							<div class="input-control__inner">
+								<input type="text" id="lk-name" class="input-control__input" placeholder="Имя">
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<label for="lk-surname" class="input-control__help">Фамилия</label>
+							<div class="input-control__inner">
+								<input type="text" id="lk-surname" class="input-control__input" placeholder="Фамилия">
+							</div>
+						</div>
 					</div>
-				</div>
+					<div class="lk-form__inner">
+						<div class="input-control lk-form__input">
+							<span class="input-control__help">Тип диплома</span>
+							<div class="input-control__inner">
+								<select class="select">
+									<option value="0">—</option>
+									<option value="1">Участника</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-control lk-form__input">
+							<span class="input-control__help">Выберите шаблон</span>
+							<div class="input-control__inner">
+								<select class="select">
+									<option value="0">—</option>
+									<option value="1">Пункт 1</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="lk-form__diploma diploma" style="background-image: url(../img/diploma-bg.jpg);">
+						<div class="diploma__body">
+							<h2 class="diploma__heading">Диплом</h2>
+							<span class="diploma__help">Награждается</span>
+							<span class="diploma__name">Александр Краснобородов</span>
+							<span class="diploma__help">За успешное прохождение всех заданий 3-ей <br>международной олимпиады от Iq Global Education</span>
+						</div>
+					</div>
+					<div class="lk-form__inner">
+						<button class="lk-form__btn btn">Создать</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
